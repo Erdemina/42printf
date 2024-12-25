@@ -4,7 +4,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdio.h>
+# include <unistd.h>
 
 void	ft_checker(va_list *p, char c, int *result);
 void	ft_putnbr(int n, int *result);

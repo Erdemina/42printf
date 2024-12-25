@@ -18,7 +18,6 @@ void	ft_checker(va_list *p, char c, int *result)
 		ft_putuhex(va_arg(*p, unsigned int), result);
 	if (c == 'p')
 	{
-		ft_putstr("0x", result);
 		ft_putptr(va_arg(*p, unsigned long long), result);
 	}
 	if (c == 'u')

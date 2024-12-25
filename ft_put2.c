@@ -21,6 +21,11 @@ void	ft_putptr(unsigned long n, int *result)
 	char	*a;
 
 	a = "0123456789abcdef";
+	if(!n)
+	{
+		ft_putstr("(nil)",result);
+		return;
+	}
 	if (n >= 16)
 	{
 		ft_putptr(n / 16, result);

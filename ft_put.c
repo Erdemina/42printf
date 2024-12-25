@@ -16,8 +16,7 @@ void	ft_putstr(char *s, int *result)
 	if (!s)
 	{
 		ft_putstr("(null)", result);
-		result += 6;
-		return ;
+		return;
 	}
 	while (s[i])
 	{
