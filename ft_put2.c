@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_put2.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eulutas <eulutas@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/29 19:11:56 by eulutas           #+#    #+#             */
+/*   Updated: 2024/12/29 19:13:52 by eulutas          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 void	ft_putuhex(unsigned int n, int *result)
@@ -18,17 +30,16 @@ void	ft_putuhex(unsigned int n, int *result)
 
 void	ft_putptr(unsigned long n, int *result)
 {
-
-	if(!n)
+	if (!n)
 	{
-		ft_putstr("(nil)",result);
-		return;
+		ft_putstr("(nil)", result);
+		return ;
 	}
-	ft_putstr("0x",result);
-	ft_puthexptr(n,result);
+	ft_putstr("0x", result);
+	ft_puthexptr(n, result);
 }
 
-void ft_puthexptr(unsigned long n, int *result)
+void	ft_puthexptr(unsigned long n, int *result)
 {
 	char	*a;
 
